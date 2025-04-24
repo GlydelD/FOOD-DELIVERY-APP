@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div class="sm:flex sm:flex-row flex flex-col box-border">
+        <div class="bg-gradient-to-tl from-secondary-100 to-primary-100 sm:w-[45vw] h-screen w-full flex flex-col justify-center items-center text-white text-center relative">
+            <span class="absolute top-0 left-0 mt-10 ml-10 font-black">Placeholder logo</span>
+            <p class="font-bold text-4xl">Log in now!</p>
+            <p class="mt-2 w-[80vw] sm:w-[35vw]">Log in to access your personalized veterinary dashboard. Manage patient records, schedule appointments, track medical histories, and ensure the best care for your furry clients. Your reliable companion in veterinary excellence awaits—just sign in to get started.</p>
+            <a href="login.php"><button class="border-white border-2 w-40 mt-2 p-1 rounded-md font-semibold">SIGN IN</button></a>
+            <span class="absolute bottom-0 text-[12px] mb-5">VETSYSTEM 2024</span>
+        </div>
+        <div class="flex flex-col items-center sm:w-[55vw] w-screen h-screen">
+            <form action="success_email.php" method="post" class="flex flex-col items-center sm:w-[55vw] w-screen h-screen sm:mt-[10vh] mt-[5vh]" id="formSignup">
+                <div class="flex flex-col sm:w-[40vw] w-[75%]">
+                    <a href="homepage.php" class="mb-12 text-txtgray-100">&#8249;&nbsp;Back to home</a>
+                    <p class="font-bold text-4xl text-primary-100 sm:mb-12 mb-9">Sign Up</p>
+                    <div class="w-full sm:gap-3 flex flex-col sm:flex sm:flex-row">
+                        <div class="w-full">
+                            <p class="font-bold text-md mb-1">First Name</p>
+                            <input required type="text" name="firstName" placeholder="Maria" class="box-border text-txtgray-100 border-[0.5px] border-txtgray-100 outline-none p-2 rounded-[3px] w-full mb-2">
+                        </div>
+                        <div class="w-full">
+                            <p class="font-bold text-md mb-1">Last Name</p>
+                            <input required type="text" name="lastName" placeholder="Mari" class="box-border text-txtgray-100 border-[0.5px] border-txtgray-100 outline-none p-2 rounded-[3px] w-full mb-2">
+                        </div>
+                    </div>
+                    <p class="font-bold text-md mb-1">Email</p>
+                    <input required type="email" name="email" placeholder="sample@gmail.com" class="box-border text-txtgray-100 border-[0.5px] border-txtgray-100 outline-none p-2 rounded-[3px] w-full mb-2">
+                    <div class="w-full sm:gap-3 flex flex-col sm:flex sm:flex-row">
+                        <div class="w-full">
+                            <p class="font-bold text-md mb-1">Password</p>
+                            <input required type="password" name="password" id="password" placeholder="Password" class="box-border text-txtgray-100 border-[0.5px] border-txtgray-100 outline-none p-2 rounded-[3px] w-full mb-2">
+                        </div>
+                        <div class="w-full">
+                            <p class="font-bold text-md mb-1">Repeat Password</p>
+                            <input required type="password" id="confirmPassword" placeholder="Repeat Password" class="box-border text-txtgray-100 border-[0.5px] border-txtgray-100 outline-none p-2 rounded-[3px] w-full mb-2">
+                        </div>
+                    </div>
+                    <p class="font-bold text-md mb-1">Contact Number</p>
+                    <input required type="text" name="cNumber" placeholder="1234567890" class="box-border text-txtgray-100 border-[0.5px] border-txtgray-100 outline-none p-2 rounded-[3px] w-full mb-2">
+                    <input required type="submit" name="signupBtn" value="SIGN UP" class="text-white bg-gradient-to-tl from-secondary-100 to-primary-100 box-border border-[0.5px] font-semibold outline-none p-2 rounded-[3px] w-full mt-1 mb-1">
+                    <div class="sm:text-base text-[10px] font-semibold text-primary-100">
+                        <input type="checkbox" name="check" required>
+                        <span class="ml-2">By checking you agree to our&nbsp;</span><a href="signup.html" class="font-bold underline">terms</a>&nbsp;and&nbsp;<a href="signup.html" class="font-bold underline">condition.</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("formSignup").addEventListener("submit", function (event) {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password === "") {
+                alert("Password field cannot be empty.");
+                event.preventDefault();
+            } else if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
