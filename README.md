@@ -33,7 +33,7 @@ A modern and user-friendly Food Delivery App that connects users with top-rated 
 
 -------**SCREENSHOTS**--------
 
-### **Menu Fragment Screenshot**
+### **Home Fragment Screenshot**
 ![Menu Screenshot](home.jpg)
 
 ### **Cart Fragment Screenshot**
