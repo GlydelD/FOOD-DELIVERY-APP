@@ -42,15 +42,8 @@ A modern and user-friendly Food Delivery App that connects users with top-rated 
 ### **Profile Fragment Screenshot**
 ![Profile Screenshot](profile.jpg)
 
--------**GUIDE**--------
-
-### **Prerequisites**
-- Android Studio installed
-- Android device/emulator
-- Java
-
 -------**Installation**--------
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/food-delivery-app.git
+   git clone https://github.com/GlydelD/food-delivery-app.git
    cd food-delivery-app
