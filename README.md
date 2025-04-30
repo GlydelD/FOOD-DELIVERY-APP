@@ -1,7 +1,7 @@
 # **Food Delivery App**  
 **Application Name: FoodGo**
 
-A modern and user-friendly Food Delivery App that connects users with top-rated restaurants, making ordering food fast, easy, and convenient.
+A modern and user-friendly Food Delivery App that connects users with top-rated restaurants, making ordering food fast, easy, and convenient. No database kay naglagot ko, but there is a guide.
 
 **Application APK**: [Download APK](https://mega.nz/file/WccBDLZb#z2Ku8K9RvJtdfL46LTKH5rRTi2_rsus3PlHjQfPK0Sk)
 
